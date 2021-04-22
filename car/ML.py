@@ -10,7 +10,7 @@ import os
 dirspot = os.getcwd()
 print(dirspot)
 
-url=dirspot+"\\car\\car_data.csv"
+url=dirspot+"/car/car_data.csv"
 
 df = pd.read_csv(url,header=0,encoding = 'unicode_escape')
 df2 = df.dropna(axis = 0)
