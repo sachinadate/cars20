@@ -1,1 +1,1 @@
-web: gunicorn cars20.wsgi --log-file -
+web: gunicorn cars2020.wsgi --log-file -
