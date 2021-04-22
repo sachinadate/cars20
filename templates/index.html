@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ISR Machine learning Model</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" 
+	href="{% static 'master.css' %}">
+</head>
+<body class="a" >
+<nav class="navbar navbar-expand bg-dark navbar-dark ">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="{% url 'index' %}">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'carsell' %}">CALCULATE</a>
+    </li>
+    
+  </ul>
+</nav>
+	<div><img src="{% static 'final20.jpg' %}" class="img-responsive"></div>
+	<div class="container ">
+    	<div class="row r1" >
+       		<div class="col-md-12 text-center">
+           		<h1 class="brand">Cars 2020 Evaluator</h1>
+           		
+            	<h1 class="sub">Find the Maximum Resale Price(MRP)<br> of your Car</h1>
+  
+        	</div>
+            
+        	</div>
+   	 	</div>
+    	<div class="row r2">
+       	 	<div class="col-md-12 text-right" >
+				
+				<div class="col-md-12 text-right" >
+					<button class=" btn hb"><a href="{% url 'carsell' %}"><b>GO</b></a></button>
+				</div>
+        	</div>
+    	</div>
+	</div>
+</body>
+</html>
+<!--<form action="nextpage">
+					<button type="submit" class=" btn hb" ><b>GO</b></a></button>
+				</form>-->
